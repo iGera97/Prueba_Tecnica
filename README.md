@@ -1,4 +1,5 @@
 #Prueba técnica: Data Engineer
+
 ##Sección 1: Data pipeline
 
 ###1.1 Carga de información
@@ -78,6 +79,8 @@ Utilizando MySQL se creó la base datos pruebatecnica, después la tabla Cargo c
     );
 Una vez creada la tabla se importó el dataset "data_prueba_tecnica_corregida.csv" mediante la herramienta Tabla Data Import Wizard de WorkBench:
 
+![Importacion csv](https://github.com/iGera97/Prueba_Tecnica/blob/main/Importacion.png "Importacion csv")
+
 Al haber tratado los datos en R la importación fue exitosa, teniendo un total de 9993 registros.(Se creó un backUp de la tabla)
 
 Posteriormente se realizó otra base de datos llamada "tablas_separadas", donde se crearon las tablas charges y companies, donde se distribuyeron las columnas de la tabla original "Cargo".
@@ -86,16 +89,17 @@ Quedando de la siguiente manera:
 companies
 |company_id   |company_name   |
 | ------------ | ------------ |
-| 8f642dc67fccf861548dfe1c
-  |Muebles chidos   |
+| 8f642dc67fccf861548dfe1c |Muebles chidos   |
 | cbf1c8b09cd5b549416d49d2  |  MiPasajefy |
 
 charges
-|id | company_id | amount | status | created_at | update_at
+|   id       | company_id  | amount   | status  | created_at | update_at  |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+
 
 Se creo un variable foranea para interocnectar estas dos tablas, generando el siguiente esquema estructurado:
 
-****
+![Esquema](https://github.com/iGera97/Prueba_Tecnica/blob/main/ESquema%20estrcuturado.png "Esquema")
 
 ###1.5 SQL
 Finalmente se creó un vista donde se unieronambas tablas y se obtuvo el total de transacción por emprsa y por día:
