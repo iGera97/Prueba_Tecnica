@@ -104,7 +104,7 @@ charges
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 
 
-Se creo un variable foranea para interocnectar estas dos tablas, generando el siguiente esquema estructurado:
+Se creo un variable foranea para intercocnectar estas dos tablas,esto mediante la herramienta de Ingenieria invertida de WorkBench, generando el siguiente esquema estructurado:
 
 ![Esquema](https://github.com/iGera97/Prueba_Tecnica/blob/main/ESquema%20estrcuturado.png "Esquema")
 
