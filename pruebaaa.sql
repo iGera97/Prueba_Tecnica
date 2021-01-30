@@ -27,6 +27,7 @@ describe Cargo_BackUp;
 ALTER TABLE Cargo_BackUp ADD PRIMARY KEY(id);
 
 #**************************************************************
+CREATE DATABASE tablas_separadas;
 USE tablas_separadas;
 #CREACION DE LA TABLA COMPANIES con los datos de la compañia 
 CREATE TABLE tablas_separadas.companies SELECT DISTINCT company_id,company_name FROM pruebatecnica.cargo; 
