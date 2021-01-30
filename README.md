@@ -14,8 +14,9 @@ Para la extracción se usó el lenguaje de programación R y el IDE RStudio porq
 
 Para realizar algunas pruebas de comparación tambien usé Microsoft Excel, aquí pude percatarme de que existían filas en blanco en el documento y al subirlas a MongoDB las contaba como registros, pero al importarlo en R desaparecieron y  se obtuvieron 10000 registros almacenados en la variable prueba.
 
-R se descargo de https://cran.r-project.org/bin/windows/base/ , rstudio de https://rstudio.com/products/rstudio/download/ , una ves instalados en ese orden, se puede trabajar.
     prueba <- read.csv("data_prueba_tecnica.csv",header = T)
+
+R se descargo de https://cran.r-project.org/bin/windows/base/ , rstudio de https://rstudio.com/products/rstudio/download/ , una vez instalados en ese orden, se puede trabajar.
 
 ### 1.3 Transformación
 
