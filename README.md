@@ -22,6 +22,7 @@ R se descargo de https://cran.r-project.org/bin/windows/base/ , rstudio de https
 De acuerdo a los parametros para la información solicitados se realizarón las siguientes acciones:
 
 1* Primero se analizó la columna created_at, se encontraron dos valores con un formato diferente y se modificaron, para que coincidiera con los demás, posteriormente se transformó en formato de fecha.(Para este último paso de instaló la biblioteca "dplyr" con el comando install.packaches)
+
     #Convertir columnas created_at y paid_at como fechas
     #install.packages("dplyr")
     library(dplyr)
@@ -91,6 +92,7 @@ Al haber tratado los datos en R la importación fue exitosa, teniendo un total d
 Posteriormente se realizó otra base de datos llamada "tablas_separadas", donde se crearon las tablas charges y companies, donde se distribuyeron las columnas de la tabla original "Cargo".
 
 Quedando de la siguiente manera:
+
 companies
 |company_id   |company_name   |
 | ------------ | ------------ |
