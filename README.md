@@ -1,14 +1,14 @@
 # Prueba Técnica: Data Engineer
 
-##Sección 1: Data pipeline
+## Sección 1: Data pipeline
 
-###1.1 Carga de información
+### 1.1 Carga de información
 
 Se decidio usar el software MySQL para realizar la sección de esta prueba, ya que es el que tenía instalado y es donde tengo más expereciencia, además al revisar el dataset determiné que podría hacer la transformación de los datos de manera más directa. Otro gestor de base de datos que usé, para hacer pruebas del data set, fue MongoDB, la ventaja de este ultimó es la velocidad de importación de datos.
 
 El método para instalar MySQL fue a través del siguiente Link: https://dev.mysql.com/downloads/installer/ , se instaló MySQL Installer, MySQL WorkBench y se configuró un servidor local para almacenar la base de datos.
 
-###1.2 Extracción
+### 1.2 Extracción
 
 Para la extracción se usó el lenguaje de programación R y el IDE RStudio porque es un software en el que tengo más experiencia y donde la extracción, y procesamiento de información es muy eficiente, el formato de trabajo fue .CSV porque es un formato muy conocido, y lo pude exportar e importar en muchos otros software.
 
@@ -17,7 +17,7 @@ Para realizar algunas pruebas de comparación tambien usé Microsoft Excel, aqu�
 R se descargo de https://cran.r-project.org/bin/windows/base/ , rstudio de https://rstudio.com/products/rstudio/download/ , una ves instalados en ese orden, se puede trabajar.
     prueba <- read.csv("data_prueba_tecnica.csv",header = T)
 
-###1.3 Transformación
+### 1.3 Transformación
 
 De acuerdo a los parametros para la información solicitados se realizarón las siguientes acciones:
 
@@ -64,7 +64,7 @@ Finalmente se exportó la tabla corregida en un formato CSV, obteniendo un total
 
     write.csv(prueba,"data_prueba_tecnica_corregida.csv",row.names = F)
 
-###1.4 Dispersión de la información
+### 1.4 Dispersión de la información
 
 Utilizando MySQL se creó la base datos pruebatecnica, después la tabla Cargo con los parametros solicitados.
 
@@ -106,7 +106,7 @@ Se creo un variable foranea para interocnectar estas dos tablas, generando el si
 
 ![Esquema](https://github.com/iGera97/Prueba_Tecnica/blob/main/ESquema%20estrcuturado.png "Esquema")
 
-###1.5 SQL
+### 1.5 SQL
 
 Finalmente se creó un vista donde se unieronambas tablas y se obtuvo el total de transacción por emprsa y por día:
 
@@ -116,7 +116,7 @@ Finalmente se creó un vista donde se unieronambas tablas y se obtuvo el total d
     GROUP BY Compañias,created_at;
 
 
-##Sección 2
+## Sección 2
 
 Se implemento una aplicación en Python que calculara el numero faltante de un conjunto de los primeros 100 números naturales del cuál se extrajo uno:
 
